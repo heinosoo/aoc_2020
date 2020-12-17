@@ -4,7 +4,7 @@ from math import prod
 
 
 def parse(file):
-    re_rule = re.compile('^(.+): (\d+)-(\d+) or (\d+)-(\d+)')
+    re_rule = re.compile(r'^(.+): (\d+)-(\d+) or (\d+)-(\d+)')
     rules = {}
     with open(file) as f:
         while True:
